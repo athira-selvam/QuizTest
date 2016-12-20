@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+import pack.*;
+abstract public class CalcResult{
+   public void calculate(int m,String s){
+
+       
+        try{
+            PrintWriter writer = new PrintWriter(new FileWriter("result.txt", true));
+            writer.println(s + "-" + m);
+            System.out.println(s + "  Your mark is =  " + m);
+            writer.close();
+           } 
+        catch (Exception e) {
+            System.out.println("Error");
+        }
+        
+        
+    } 
+
+  }
